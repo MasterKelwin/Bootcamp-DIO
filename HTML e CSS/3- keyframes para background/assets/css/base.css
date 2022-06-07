@@ -1,0 +1,12 @@
+:root {
+    --cor-primaria: #c22ed0;
+    --cor-secundaria: #9C7CD5;
+    --cor-terciaria: #5ffae0;
+}
+
+[data-tema="escuro"] {
+    --cor-primaria: #e65758;
+    --cor-secundaria: #5d0117;
+    --cor-terciaria: #771d32;  
+}
+
