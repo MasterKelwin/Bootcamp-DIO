@@ -4,9 +4,9 @@
     --cor-terciaria: #5ffae0;
 }
 
-[data-tema="escuro"] {
+[data-tema="alternativo"] {
     --cor-primaria: #e65758;
-    --cor-secundaria: #5d0117;
-    --cor-terciaria: #771d32;  
+    --cor-secundaria: #771d32;
+    --cor-terciaria: #5d0117;  
 }
 

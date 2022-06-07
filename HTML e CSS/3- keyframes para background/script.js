@@ -5,7 +5,7 @@ function setTemaInicial() {
     if(temaSalvo) {
         body.setAttribute('data-tema', temaSalvo);
     } else {
-        setTema('claro');
+        setTema('default');
     }
 } 
 
@@ -20,9 +20,9 @@ function setTema(tema) {
 function trocaTema() {
     const ativaTema = localStorage.getItem('tema');
 
-    if(ativaTema === 'claro') {
-        setTema('escuro');
+    if(ativaTema === 'default') {
+        setTema('alternativo');
     } else {
-        setTema('claro');
+        setTema('default');
     }
 }
