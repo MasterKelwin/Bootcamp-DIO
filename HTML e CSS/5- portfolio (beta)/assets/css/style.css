@@ -334,3 +334,46 @@ footer {
 
 /* responsivo */ 
 
+
+@media (max-width: 800px) {
+    .social-media {
+        flex-direction: column;
+    }
+
+    .header-wrapper {
+        max-width: 90%;
+    }
+
+    #toggle:checked ~ .menu {
+        box-shadow: 0px 0px 0px 80vmax #fff;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    main .card-container:nth-child(1),
+    main .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        height: 250px;
+        width: 100vw;
+    }
+
+    .card-text {
+        width: 90%;
+        margin: 1rem 0 4rem 0;
+    }
+
+    .card:hover > .card-wrapper::before {
+        opacity: 1;
+        width: 350px;
+        height: 200px;
+    }
+}
