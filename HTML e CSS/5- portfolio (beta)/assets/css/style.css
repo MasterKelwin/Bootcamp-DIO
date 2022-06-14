@@ -204,7 +204,6 @@ h2 {
 
 #toggle:checked ~ .menu {
     box-shadow: 0px 0px 0px 90vw #fff;
-    border-radius: 1%;
     z-index: 50;
     border-radius: 50%;
 }
@@ -215,3 +214,123 @@ h2 {
     border-radius: 50%;
     z-index: 52;
 }
+
+/* CARDS */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 3rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(.4);
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: var(--cor-primaria);
+    text-align: justify;
+    line-height: 125%;
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: .4s;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    opacity: 1;
+    width: 350px;
+    height: 250px;
+}
+
+.card:hover > .card-wrapper p {
+    visibility: visible;
+    opacity: 1;
+    font-size: 1em;
+}
+
+.card__github {
+    background-image: url('../imgs/github.png');
+}
+
+.card__linkedin {
+    background-image: url('../imgs/linkedin.png');
+}
+
+.card__instagram {
+    background-image: url('../imgs/instagram.jpg');
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    text-align: center;
+}
+
+/* responsivo */ 
+
